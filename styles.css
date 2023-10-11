@@ -1,0 +1,54 @@
+* {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+}
+
+body {
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 8rem;
+}
+
+a{
+    color: #000000;
+}
+
+a:hover {
+    color: #ff0000; /* Change to your desired hover color */
+    font-style: italic;
+    letter-spacing:0.5px;
+}
+
+.BodyTitle {
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 1.4rem;
+}
+
+.BodySubtitle {
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 1.5rem;
+    line-height: 144%;
+}
+
+.smallParagraph {
+    padding-bottom: 8px;
+}
+
+.FooterRightSide{
+    text-align: right;
+    font-size: 16px;
+}
+
+
+#SubtitleLabel{
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1.28px;
+    line-height: 144%;
+}
