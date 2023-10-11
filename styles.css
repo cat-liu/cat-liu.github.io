@@ -16,7 +16,7 @@ main {
 header {
     /* display: flex;
     justify-content: space-between; */
-    padding: 20px;
+    padding: 4rem 0rem 2rem 0rem;
     max-width: 650px;
     margin: auto;
 }
