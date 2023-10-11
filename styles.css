@@ -7,17 +7,17 @@
 
 main {
     background-color: white;
-    max-width: 650px;
+    max-width: 630px;
     margin: auto;
     padding: 0.5rem;
-    padding-top: 2rem;
+    padding-top: 1.8rem;
 }
 
 header {
     /* display: flex;
     justify-content: space-between; */
-    padding: 4rem 0rem 2rem 0rem;
-    max-width: 650px;
+    padding: 5rem 0rem 1.5rem 0rem;
+    max-width: 630px;
     margin: auto;
 }
 
