@@ -1,8 +1,40 @@
+/* Regular Garamond Font */
+@font-face {
+    font-family: 'Garamond';
+    src: url('fonts/GARA.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  /* Italic Garamond Font */
+@font-face {
+    font-family: 'Garamond';
+    src: url('fonts/GARAIT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
 * {
-    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-family: 'Garamond';
     font-size: 20px;
     line-height: 28px;
     letter-spacing: -0.1px;
+    font-weight: normal;
+    font-style: normal;
 }
 
 main {
@@ -11,6 +43,7 @@ main {
     margin: auto;
     padding: 0.5rem;
     padding-top: 1.8rem;
+    padding-bottom: 5rem;
 }
 
 header {
@@ -21,16 +54,17 @@ header {
     margin: auto;
 }
 
-a{
+a {
     color: #000000;
 }
 
 a:hover {
+    font-family: 'Garamond';
     color: #ff0000; /* Change to your desired hover color */
     font-style: italic;
-    letter-spacing:0.5px;
 }
 
+/*CSS for menu - not active */
 .headerLeft {
     flex: 1;
 }
@@ -48,9 +82,12 @@ a:hover {
     list-style: none;
 }
 
+/* CSS for page header */
 .bodyTitle {
-    font-size: 64px;
+    font-family: 'Garamond';
     font-weight: bold;
+    font-size: 64px;
+    letter-spacing: 1px;
     padding-bottom: 1.4rem;
 }
 
@@ -66,16 +103,98 @@ a:hover {
     margin: 0;
 }
 
-.smallParagraph {
+/* CSS for main body content */
+.smallPara {
     padding-bottom: 8px;
 }
 
-.footerRightSide{
-    text-align: right;
-    font-size: 16px;
+.paraBold {
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#subtitleLabel{
+/* CSS for links to contact */
+.contactLinks {
+    padding-bottom: 40px;
+}
+
+/* CSS for current projets and past experiences */
+.experienceSection {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.roleContainer {
+    padding: 1px;
+}
+
+.roleText {
+    font-family: 'Open Sans','Inter', sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.companyText{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.descriptionContainer {
+    padding: 1px;
+}
+
+.statusContainer {
+    padding: 1px;
+}
+
+.projectStatus {
+    display: flex;
+    align-items:center;
+    padding-bottom: 10px;
+}
+
+/* Status online */
+.onlineBubble {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #35C802;
+    margin-right: 5px;
+}
+
+.onlineText {
+    font-family: 'Open Sans','Inter', sans-serif;
+    font-size: 15px;
+    color: #35C802;
+}
+
+/* Status offline */
+.offlineBubble {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #979797;
+    margin-right: 5px;
+}
+
+.offlineText {
+    font-family: 'Open Sans','Inter', sans-serif;
+    font-size: 15px;
+    color: #979797;
+}
+
+/*CSS for footer*/
+.footerRightSide {
+    padding-top: 30px;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* CSS for page header subtitle */
+#subtitleLabel {
     font-size: 18px;
     font-style: italic;
     letter-spacing: 1.28px;
