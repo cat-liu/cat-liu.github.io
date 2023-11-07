@@ -133,6 +133,7 @@ a:hover {
 
 .roleText {
     font-family: 'Open Sans','Inter', sans-serif;
+    font-weight: normal;
     font-size: 14px;
     padding-bottom: 10px;
 }
@@ -168,6 +169,7 @@ a:hover {
 
 .onlineText {
     font-family: 'Open Sans','Inter', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     color: #35C802;
 }
@@ -183,6 +185,7 @@ a:hover {
 
 .offlineText {
     font-family: 'Open Sans','Inter', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     color: #979797;
 }
