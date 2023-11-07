@@ -170,7 +170,7 @@ a:hover {
 .onlineText {
     font-family: 'Open Sans','Inter', sans-serif;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     color: #35C802;
 }
 
@@ -186,7 +186,7 @@ a:hover {
 .offlineText {
     font-family: 'Open Sans','Inter', sans-serif;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     color: #979797;
 }
 
