@@ -1,39 +1,10 @@
-/* Regular Garamond Font */
-@font-face {
-    font-family: 'Garamond';
-    src: url('fonts/GARA.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-  
-  /* Italic Garamond Font */
-@font-face {
-    font-family: 'Garamond';
-    src: url('fonts/GARAIT.TTF') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Regular.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-  
 * {
-    font-family: 'Garamond';
+    font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -0.1px;
-    font-weight: normal;
+    line-height: 31px;
     font-style: normal;
 }
 
@@ -47,8 +18,6 @@ main {
 }
 
 header {
-    /* display: flex;
-    justify-content: space-between; */
     padding: 5rem 0rem 1.5rem 0rem;
     max-width: 630px;
     margin: auto;
@@ -59,7 +28,6 @@ a {
 }
 
 a:hover {
-    font-family: 'Garamond';
     color: #ff0000; /* Change to your desired hover color */
     font-style: italic;
 }
@@ -73,18 +41,13 @@ a:hover {
     max-width: 60px;
 }
 
-/* .headerRight {
-    flex: 1;
-    text-align: right;
-} */
-
 .menu {
     list-style: none;
 }
 
 /* CSS for page header */
 .bodyTitle {
-    font-family: 'Garamond';
+    font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
     font-size: 64px;
     letter-spacing: 1px;
@@ -92,7 +55,6 @@ a:hover {
 }
 
 .bodySubtitle {
-    font-size: 18px;
     font-weight: normal;
     padding-bottom: 1.5rem;
     line-height: 144%;
@@ -109,9 +71,8 @@ a:hover {
 }
 
 .paraBold {
-    font-family: 'Garamond', serif;
-    font-weight: bold;
-    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
 }
 
 /* CSS for links to contact */
@@ -133,14 +94,14 @@ a:hover {
 
 .roleText {
     font-family: 'Open Sans','Inter', sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
     padding-bottom: 10px;
 }
 
 .companyText{
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -201,6 +162,6 @@ a:hover {
 #subtitleLabel {
     font-size: 18px;
     font-style: italic;
-    letter-spacing: 1.28px;
+    letter-spacing: 1.05px;
     line-height: 144%;
 }
