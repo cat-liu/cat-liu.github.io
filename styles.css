@@ -117,40 +117,112 @@ a:hover {
 /* CSS for current projets and past experiences */
 .experienceSection {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
     padding-top: 30px;
 }
 
-.roleContainer {
-    padding: 1px;
+.job {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.jobHeader {
+    display: flex;
+    align-items: center;
+}
+
+.jobDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 769px) {
+    .job {
+        display: grid;
+        grid-template-columns: 330px 150px 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .jobHeader {
+        grid-column: 1;
+    }
+
+    .jobDetails {
+        display: contents;
+    }
+
+    .jobDetails .roleText {
+        grid-column: 2;
+    }
+
+    .jobDetails .projectStatus {
+        grid-column: 3;
+        justify-self: end;
+        margin-left: auto;
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+    .job {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .job:last-child {
+        padding-bottom: 0;
+    }
+
+    .jobHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .jobDetails {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .jobDetails .projectStatus {
+        margin-left: 0;
+    }
+
+    .jobHeader .roleText:first-child {
+        font-weight: 400;
+    }
+
+    .jobDetails .roleText {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .roleText {
     font-family: 'Open Sans','Inter', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    padding-bottom: 10px;
 }
 
-.companyText{
+.companyText {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
 
-.descriptionContainer {
-    padding: 1px;
-}
-
-.statusContainer {
-    padding: 1px;
-}
-
 .projectStatus {
     display: flex;
-    align-items:center;
-    padding-bottom: 10px;
+    align-items: center;
 }
 
 /* Status online */
