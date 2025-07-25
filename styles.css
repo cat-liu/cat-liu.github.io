@@ -107,6 +107,20 @@ a:hover {
     max-width: 60px;
 }
 
+.logo-dark {
+  display: none;
+}
+.logo-light {
+  display: block;
+}
+
+[data-theme="dark"] .logo-dark {
+  display: block;
+}
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+
 .menu {
     list-style: none;
 }
